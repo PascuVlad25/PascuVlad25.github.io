@@ -1,32 +1,285 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vlad Pascu</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
-<body>
-    <div class="header">
-        <div class="top-bar">
-            <div class="logo">
-
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header" id="Hero">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+                                <img class="header-logo-image asset-light" src="dist/images/logo-light.svg" alt="Logo">
+                                <img class="header-logo-image asset-dark" src="dist/images/logo-dark.svg" alt="Logo">
+                            </a>
+                        </h1>
+                    </div>
+                </div>
             </div>
-            <!--
-<div class="menu">
-    <a href="#">Partea 1</a>
-    <a href="#">Partea 1</a>
-    <a href="#">Partea 1</a>
-</div>
--->
-        </div>
-        <div class="main-title">
-            <p class="sub-title">- New Site -</p>
-            <h1 class="title">Vlad Pascu</h1>
-            <p class="sub-title">- Coming Soon -</p>
-        </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+                        <div class="hero-copy">
+                            <h1 class="hero-title mt-0">Hello there,<br> I'm Vlad.</h1>
+                            <p class="hero-paragraph">Are you ready to see the best website ever? <br>
+                                I hope no, because I won't redirect you to it. <br>
+                                But for now, let's see my website!</p>
+                            <div class="hero-cta">
+                                <a class="button button-primary" id="meetButton">Let's meet</a>
+                                <div class="lights-toggle">
+                                    <input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch">
+                                    <label for="lights-toggle" class="text-xs"><span>Turn me <span
+                                                class="label-text">dark</span></span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-media">
+                            <div class="header-illustration">
+                                <img class="header-illustration-image asset-light"
+                                    src="dist/images/header-illustration-light.svg" alt="Header illustration">
+                                <img class="header-illustration-image asset-dark"
+                                    src="dist/images/header-illustration-dark.svg" alt="Header illustration">
+                            </div>
+                            <div class="hero-media-illustration">
+                                <img class="hero-media-illustration-image asset-light"
+                                    src="dist/images/hero-media-illustration-light.svg" alt="Hero media illustration">
+                                <img class="hero-media-illustration-image asset-dark"
+                                    src="dist/images/hero-media-illustration-dark.svg" alt="Hero media illustration">
+                            </div>
+                            <div class="hero-media-container">
+                                <img class="hero-media-image asset-light" src="dist/images/hero-media-light.svg"
+                                    alt="Hero media">
+                                <img class="hero-media-image asset-dark" src="dist/images/hero-media-dark.svg"
+                                    alt="Hero media">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features section" id="AboutMe">
+                <div class="container">
+                    <div class="features-inner section-inner has-bottom-divider">
+                        <div class="features-header text-center">
+                            <div class="container-sm">
+                                <h2 class="section-title mt-0">About Me <i class="fas fa-address-card"></i></h2>
+                                <p class="section-paragraph">My name is Vlad Pascu and I'm passionate about Web &
+                                    Graphic Design. <br>
+                                    I make all sorts of apps from mobile to web, <br> ...so Responsive is my middle name
+                                    <i class="fas fa-smile-wink"></i>
+
+                                </p>
+                                <div class="features-image">
+                                    <img class="features-illustration asset-dark"
+                                        src="dist/images/features-illustration-dark.svg" alt="Feature illustration">
+                                    <img class="features-box asset-dark" src="dist/images/image1.jpg" alt="Feature box">
+                                    <img class="features-illustration asset-dark"
+                                        src="dist/images/features-illustration-top-dark.svg"
+                                        alt="Feature illustration top">
+                                    <img class="features-illustration asset-light"
+                                        src="dist/images/features-illustration-light.svg" alt="Feature illustration">
+                                    <img class="features-box asset-light" src="dist/images/image2.jpg"
+                                        alt="Feature box">
+                                    <img class="features-illustration asset-light"
+                                        src="dist/images/features-illustration-top-light.svg"
+                                        alt="Feature illustration top">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features-wrap">
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img class="asset-light" src="dist/images/feature-01-light1.svg"
+                                            alt="Feature 01">
+                                        <img class="asset-dark" src="dist/images/feature-01-dark2.svg" alt="Feature 01">
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="feature-title mt-0">&lt; Junior Full-Stack Web Developer /&gt;</h3>
+                                        <p class="text-sm mb-0">
+
+                                            I love working with
+                                            HTML <i class="fab fa-html5" style="color:rgb(252, 152, 70)"></i>, 
+                                            CSS <i class="fab fa-css3-alt" style="color:rgb(70, 164, 252)"></i>,
+                                            JavaScript <i class="fab fa-js-square" style="color:rgb(253, 207, 56)"></i> (and Typescript) ,
+                                            Angular <i class="fab fa-angular" style="color:rgb(241, 68, 68)"></i> 
+                                            and Ionic Framework <i class="far fa-dot-circle" style="color:rgb(70, 164, 252)"></i>. <br>
+                                            <br>
+                                            Also skilled in C++, Python, Adobe Photoshop, Adobe Illustrator and Wordpress.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img class="asset-light" src="dist/images/feature-02-light1.svg"
+                                            alt="Feature 02">
+                                        <img class="asset-dark" src="dist/images/feature-02-dark1.svg" alt="Feature 02">
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="feature-title mt-0">Study</h3>
+                                        <p class="text-sm mb-0">Currently I am studying Computer Science at <br>
+                                            Babes-Bolyai University in Cluj-Napoca.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img class="asset-light" src="dist/images/feature-03-light1.svg"
+                                            alt="Feature 03">
+                                        <img class="asset-dark" src="dist/images/feature-03-dark1.svg" alt="Feature 03">
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="feature-title mt-0">Achievements</h3>
+                                        <ul>
+                                            <li class="text-sm mb-0"> 4<sup>th</sup> prize at Mate-Info UBB 2018 Contest
+                                            </li>
+                                            <li class="text-sm mb-0"> Accomplished teamwork and leadership skills by
+                                                volunteering for
+                                                Hermes Society, ONCR and
+                                                Meaningful People </li>
+                                            <li class="text-sm mb-0"> 5000th place out of 2.000.000 programmers on
+                                                Algorithms category
+                                                leaderboard on HackerRank </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects section" id="MyProjects">
+                <div class="container-sm has-bottom-divider">
+                    <div class="cta-inner section-inner">
+                        <div class="cta-header text-center">
+                            <h2 class="section-title mt-0">My Projects <i class="fas fa-briefcase"></i></h2>
+                            <p class="section-paragraph">These are some of my personal projects, ideas and work
+                                combined.<br> &nbsp;</p>
+
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img src="./dist/images/neverbored1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">NeverBored <i class="fas fa-tasks"></i></h5>
+                                        <p class="card-text">Mobile app that doesn’t let you to get bored by giving you
+                                            fun activities to do in your spare time.</p>
+                                        <a class="button button-primary" href="http://vladpascu.me/NeverBored/"
+                                            target="blank">Check it out!</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./dist/images/unifind1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">UniFind <i class="fas fa-graduation-cap"></i></h5>
+                                        <p class="card-text">Mobile app that helps senior high-school students to find
+                                            the most suitable college for them.</p>
+                                        <a class="button button-primary" href="http://vladpascu.me/UniFind/"
+                                            target="blank">Try it yourself!</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./dist/images/scanrun1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ScanRun <i class="fas fa-running"></i></h5>
+                                        <p class="card-text">Mobile app made for scout orientation trainings and also
+                                            for fun treasure hunt competitions.</p>
+                                        <a class="button button-primary disabled">Give it a shot!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta section" id="Contact">
+                <div class="container-sm">
+                    <div class="cta-inner section-inner">
+                        <div class="cta-header text-center">
+                            <h2 class="section-title mt-0">Get in touch <i class="fas fa-comments"></i></h2>
+                            <p class="section-paragraph">If you wanna get in touch for a project collaboration or just say hi,
+                                 send me an email to <b style="cursor: pointer">vlad_pascu@yahoo.com</b>  and let's talk.
+                            </p>
+                            <div class="cta-cta">
+                                <a class="button button-primary" id="goUpButton">Play it again &nbsp; <i
+                                        class="fas fa-undo"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="site-footer-inner">
+                    <div class="brand footer-brand">
+                        <a href="#">
+                            <img class="asset-light" src="dist/images/logo-light.svg" alt="Logo">
+                            <img class="asset-dark" src="dist/images/logo-dark.svg" alt="Logo">
+                        </a>
+                    </div>
+                    <ul class="footer-links list-reset">
+                        <li>
+                            <a id="HomeButton" style="cursor: pointer">Home</a>
+                        </li>
+                        <li>
+                            <a id="AboutButton" style="cursor: pointer">About Me</a>
+                        </li>
+                        <li>
+                            <a id="ProjectsButton" style="cursor: pointer">My Projects</a>
+                        </li>
+                        <li>
+                            <a id="ContactButton" style="cursor: pointer">Get in touch</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-social-links list-reset">
+                        <li>
+                            <a href="https://www.facebook.com/vlad.pascu1" target="blank">
+                                    <span class="screen-reader-text">Facebook</span>
+                                    <i class="footer-icon fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/vlad-pascu-788140122" target="blank">
+                                <span class="screen-reader-text">LinkedIn</span>
+                                <i class="footer-icon fab fa-linkedin-in" style="margin-top: 2px"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/PascuVlad25" target="blank">
+                                <span class="screen-reader-text">Github</span>
+                                <i class="footer-icon fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer-copyright">&copy; 2019 Switch, all rights reserved</div>
+                </div>
+            </div>
+        </footer>
     </div>
 
+    <script src="dist/js/main.min.js"></script>
 </body>
 
 </html>
