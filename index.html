@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="dist/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a2a5fd7671.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85782068-2"></script>
@@ -24,10 +24,9 @@
         gtag('config', 'UA-85782068-2');
 
     </script>
-
 </head>
 
-<body class="is-boxed has-animations">
+<body class="is-boxed has-animations lights-off">
     <div class="body-wrap boxed-container">
         <header class="site-header" id="Hero">
             <div class="container">
@@ -63,7 +62,7 @@
                                 <a class="button button-primary" id="meetButton">Let's meet</a>
                                 <div class="lights-toggle">
                                     <input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch">
-                                    <label for="lights-toggle" class="text-xs"><span>Turn me <span class="label-text">dark</span></span></label>
+                                    <label for="lights-toggle" class="text-xs"><span>Turn me <span class="label-text">light</span></span></label>
                                 </div>
                             </div>
                         </div>
@@ -90,18 +89,16 @@
                     <div class="features-inner section-inner has-bottom-divider">
                         <div class="features-header text-center">
                             <div class="container-sm">
-                                <h2 class="section-title mt-0">About Me <i class="fa fa-address-card"></i></h2>
+                                <h2 class="section-title mt-0">About Me&nbsp;<i class="fa fa-address-card"></i></h2>
                                 <p class="section-paragraph">
                                     <span class="line">My name is Vlad Pascu</span>
-                                    <span class="line">and I'm passionate about Web &</span>
-                                    <span class="line">Graphic Design.</span>
+                                    <span class="line">and I'm passionate about</span>
+                                    <span class="line">Web Development & Graphic Design.</span>
                                     <br>
                                     <span class="line">I make all sorts of apps</span>
                                     <span class="line">from mobile to web</span>
                                     <br>
-                                    <span class="line">...so Responsive is my middle name
-                                        <i class="fa fa-smile-wink"></i>
-                                    </span>
+                                    <span class="line">...so Responsive is my middle name.</span>
 
                                 </p>
                                 <div class="features-image">
@@ -124,13 +121,12 @@
                                     <div class="feature-content">
                                         <h3 class="feature-title mt-0">&lt; Full-Stack Web Developer /&gt;</h3>
                                         <p class="text-sm mb-0">
-                                            Currently working as Full-Stack Web Developer at Yonder in Cluj-Napoca.
+                                            Currently working as a Full-Stack Web Developer at Yonder in Cluj-Napoca.
                                             <br><br>
                                             I love making web apps using Angular, Ionic Framework, Typescript, HTML and SCSS. <br>
                                             <br>
                                             Also skilled in C# DotNet, MSSQL, Python, Java, Adobe Photoshop, Adobe Illustrator and
                                             Wordpress.
-
                                         </p>
                                     </div>
                                 </div>
@@ -145,7 +141,7 @@
                                         <h3 class="feature-title mt-0">Study</h3>
                                         <p class="text-sm mb-0">
                                             <span class="line">Currently I am studying Software Engineering</span>
-                                            <span class="line">as the Master's degree.</span>
+                                            <span class="line">as Master's degree.</span>
                                             <span class="line">Recently I've graduated Computer Science at</span>
                                             <span class="line">Babes-Bolyai University in Cluj-Napoca.</span>
                                         </p>
@@ -183,9 +179,49 @@
                 <div class="container-sm has-bottom-divider">
                     <div class="cta-inner section-inner">
                         <div class="cta-header text-center">
-                            <h2 class="section-title mt-0">My Projects <i class="fa fa-briefcase"></i></h2>
+                            <h2 class="section-title mt-0">My Projects&nbsp;<i class="fa fa-briefcase"></i></h2>
                             <p class="section-paragraph">These are some of my personal projects, ideas and work
                                 combined.<br> &nbsp;</p>
+
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img src="./dist/images/fc_angular.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Angular <i style="color: #c70b34" class="fab fa-angular"></i>
+                                            <div class="card-subtitle">#FameworkChallenge</div>
+                                        </h5>
+                                        <p class="card-text">Showing off a bit my frontend skills, but also experimenting with features I've not used,
+                                             like Angular Animations.</p>
+                                        <a class="button button-primary disabled">Coming soon...</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./dist/images/fc_react.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            React <i style="color: #53aec8" class="fab fa-react"></i>
+                                            <div class="card-subtitle">#FameworkChallenge</div>
+                                        </h5>
+                                        <p class="card-text">A challenge for me to rewrite the same app in React. 
+                                            Experimenting with functional and reactive programming.</p>
+                                        <a class="button button-primary disabled">Coming soon...</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./dist/images/fc_vue.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Vue.Js <i style="color: #3b966e" class="fab fa-vuejs"></i>
+                                            <div class="card-subtitle">#FameworkChallenge</div>
+                                        </h5>
+                                        <p class="card-text">A challenge for me to rewrite the same app in Vue.Js.
+                                            Trying to find which framework fits better in a certain situation.
+                                        </p>
+                                        <a class="button button-primary disabled">Coming soon...</a>
+                                    </div>
+                                </div>
+                            </div>
 
                             <div class="card-deck">
                                 <div class="card">
@@ -225,7 +261,7 @@
                 <div class="container-sm">
                     <div class="cta-inner section-inner">
                         <div class="cta-header text-center">
-                            <h2 class="section-title mt-0">Get in touch <i class="fa fa-comments"></i></h2>
+                            <h2 class="section-title mt-0">Get in touch&nbsp;<i class="fa fa-comments"></i></h2>
                             <p class="section-paragraph">If you wanna get in touch for a project collaboration or just
                                 say hi,
                                 send me an email to <b style="cursor: pointer">vlad_pascu25@yahoo.com</b> and let's talk.
@@ -266,19 +302,19 @@
                         <li>
                             <a href="https://www.facebook.com/vlad.pascu1" target="blank">
                                 <span class="screen-reader-text">Facebook</span>
-                                <i class="footer-icon fa fa-facebook-f"></i>
+                                <i class="footer-icon fab fa-facebook-f"></i>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/in/vlad-pascu-788140122" target="blank">
                                 <span class="screen-reader-text">LinkedIn</span>
-                                <i class="footer-icon fa fa-linkedin" style="margin-top: 2px"></i>
+                                <i class="footer-icon fab fa-linkedin-in" style="margin-top: 2px"></i>
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/PascuVlad25" target="blank">
                                 <span class="screen-reader-text">Github</span>
-                                <i class="footer-icon fa fa-github"></i>
+                                <i class="footer-icon fab fa-github"></i>
                             </a>
                         </li>
                     </ul>
@@ -289,6 +325,4 @@
     </div>
 
     <script src="dist/js/main.min.js"></script>
-</body>
-
-</html>
+</body></html>
